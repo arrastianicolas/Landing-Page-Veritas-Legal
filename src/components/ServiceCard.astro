@@ -1,0 +1,22 @@
+---
+const { title, description, icon, link } = Astro.props;
+---
+
+<div class="bg-[#e7e6e6] p-6 shadow-md relative">
+  <div class="absolute -top-5 left-5 bg-[#e7e6e6] p-2">
+    <img src={icon} alt={title} class="w-10 h-10" />
+  </div>
+  <div class="pt-8">
+    <h3 class="text-2xl font-semibold mb-2 text-gray-800 font-roboto">
+      {title}
+    </h3>
+    <p class="text-neutral-800 mb-4 font-roboto">{description}</p>
+    <a
+      aria-label="link para WhatsApp"
+      href={link}
+      class="uppercase font-medium font-roboto text-sm text-[#9b7128] flex items-center gap-1 hover:underline"
+    >
+      Consultanos →
+    </a>
+  </div>
+</div>

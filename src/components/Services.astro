@@ -1,0 +1,41 @@
+---
+import IconServices from "./icons/IconServices.astro";
+import ServiceCard from "./ServiceCard.astro";
+import { legalServices } from "../content/serviceCard.js";
+---
+
+<section title="A Qué Nos Dedicamos?" id="Servicios" class="sm:py-10">
+  <div class="container px-5 xl:px-0 mx-auto">
+    <div>
+      <h2
+        class="flex items-center gap-4 text-2xl sm:text-4xl font-roboto text-neutral-800 mb-2"
+      >
+        Especialización
+        <IconServices
+          name="mdi:scale-balance"
+          class="text-neutral-800 w-8 h-8 mr-2"
+        />
+      </h2>
+      <div class="w-24 h-[2px] bg-black/60"></div>
+    </div>
+
+    <h2
+      class="py-5 mt-5 text-3xl sm:text-5xl font-semibold font-roboto text-neutral-800"
+    >
+      ¿A Qué Nos Dedicamos?
+    </h2>
+
+    <div class="grid md:grid-cols-2 my-10 gap-10">
+      {
+        legalServices.map((item) => (
+          <ServiceCard
+            title={item.title}
+            description={item.description}
+            icon={item.icon}
+            link={item.link}
+          />
+        ))
+      }
+    </div>
+  </div>
+</section>

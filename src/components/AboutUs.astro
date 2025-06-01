@@ -1,0 +1,80 @@
+---
+import IconAbout from "../components/icons/IconAbout.astro";
+---
+
+<section title="Quienes Somos?" id="Nosotros" class="py-15">
+  <div class="container mx-auto px-5 xl:px-0">
+    <div>
+      <h2
+        class="text-2xl flex items-center gap-4 sm:text-4xl font-roboto text-neutral-800 mb-2"
+      >
+        Sobre Nosotros
+        <IconAbout
+          name="mdi:scale-balance"
+          class="text-neutral-800 w-8 h-8 mr-2"
+        />
+      </h2>
+      <div class="w-24 h-[2px] bg-black/60"></div>
+    </div>
+    <h2
+      class="py-5 mt-5 text-3xl sm:text-5xl font-semibold font-roboto text-neutral-800"
+    >
+      ¿Quiénes Somos?
+    </h2>
+
+    <div
+      class="flex flex-col lg:flex-row justify-between gap-20 items-center py-5"
+    >
+      <div class="flex flex-col lg:w-1/2 w-full">
+        <p class="sm:text-lg font-roboto text-neutral-800">
+          En <span class="font-semibold">Véritas Legal</span>, creemos que el
+          acceso a una defensa legal clara, ética y eficaz es un derecho
+          fundamental. <span class="font-semibold">Fundado en 2012</span> por los
+          abogados <span class="font-semibold"
+            >Martín Cattáneo, Lucía Ramallo y Sebastián Ferrero</span
+          >, nuestro estudio nació con el propósito de brindar asesoría jurídica
+          de excelencia.
+        </p>
+        <p class="py-5 sm:text-lg font-roboto text-neutral-800">
+          Conformado por un equipo de profesionales comprometidos, nuestro
+          estudio combina la experiencia tradicional del derecho con una <span
+            class="font-semibold">visión moderna y estratégica</span
+          >, adaptada a los nuevos desafíos legales.
+        </p>
+        <p class="sm:text-lg font-roboto text-neutral-800">
+          Durante <span class="font-semibold">más de una década </span>hemos
+          acompañado a particulares, profesionales y empresas en la <span
+            class="font-semibold"
+            >resolución de conflictos laborales, familiares y comerciales</span
+          >, priorizando siempre la <span class="font-semibold"
+            >confidencialidad</span
+          >, el <span class="font-semibold">respeto</span> y la búsqueda de <span
+            class="font-semibold">soluciones justas</span
+          >.
+        </p>
+        <p class="py-5 sm:text-lg font-roboto text-neutral-800">
+          Nuestro compromiso es ofrecer un servicio legal integral, donde cada
+          cliente se sienta acompañado y respaldado en cada paso del proceso. En <span
+            class="font-semibold">Véritas Legal</span
+          >, tu tranquilidad es nuestra prioridad.
+        </p>
+        <p class="sm:text-lg font-roboto text-neutral-800">
+          <span class="font-semibold">¡Conocé a nuestro equipo!</span>
+        </p>
+      </div>
+      <div
+        class="relative md:w-[500px] h-full group transition-transform duration-500 hover:scale-105"
+      >
+        <div
+          class="absolute w-full h-full bg-yellow-600 z-0 transition-transform duration-300 group-hover:translate-x-1 group-hover:translate-y-1"
+        >
+        </div>
+        <img
+          src="/about-img.webp"
+          alt="Equipo legal"
+          class="h-[350px] sm:h-full w-full relative bottom-[20px] sm:bottom-[25px] right-[20px] sm:right-[25px] z-10 shadow-xl"
+        />
+      </div>
+    </div>
+  </div>
+</section>

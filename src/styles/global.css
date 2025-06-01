@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-text: #d8d8d8;
+  --color-secondary: #775414;
+  --color-secondary-text: #1e1e1e;
+
+  --font-DM: "DM Serif Text", serif;
+  --font-roboto: "Roboto Serif", serif;
+}

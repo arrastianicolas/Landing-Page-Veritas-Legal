@@ -1,0 +1,72 @@
+---
+const redes = [
+  {
+    name: "Email",
+    url: "",
+  },
+  {
+    name: "Instagram",
+    url: "https://www.instagram.com",
+  },
+  {
+    name: "Facebook",
+    url: "https://www.facebook.com",
+  },
+];
+---
+
+<footer title="Redes y Contacto" class="bg-neutral-800">
+  <div class="container mx-auto px-5 xl:px-0 py-10 text-white">
+    <div
+      class="flex flex-col sm:flex-row justify-between gap-5 sm:items-center"
+    >
+      <h1
+        class="text-2xl sm:text-4xl text-primary-text font-DM italic cursor-pointer"
+      >
+        Véritas Legal
+      </h1>
+      <div class="flex flex-col">
+        <p class="font-roboto text-slate-300 text-xs md:text-base">
+          Direccion 123 - Rosario
+        </p>
+        <p class="font-roboto text-slate-300 text-xs md:text-base">
+          Horarios: 8:00am a 16:00pm
+        </p>
+      </div>
+
+      <ul class="flex gap-4">
+        {
+          redes.map((red) => (
+            <li class="font-roboto text-xs md:text-base ">
+              <a
+                href={red.url}
+                target="_blank"
+                aria-label="Redes Sociales"
+                rel="noopener noreferrer"
+                class="text-slate-300 gap-4 hover:text-yellow-500 transition-colors"
+              >
+                <span>→</span>
+                {red.name}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class="w-full h-[1px] mt-5 bg-white/60"></div>
+    <div class="flex flex-col sm:flex-row justify-between sm:items-center mt-8">
+      <p class="font-roboto items-center text-slate-300 text-xs">
+        Coypright © {new Date().getFullYear()}
+        <em>Véritas Legal</em>
+      </p>
+      <p class="font-roboto text-slate-300 text-xs sm:mt-0 mt-5">
+        Desarrollado por <a
+          href="https://www.linkedin.com/in/nicolas-arrastia-00982825b/"
+          aria-label="LinkedIn Nicolas Arrastia"
+          target="_blank"
+          class="text-cyan-500 hover:underline italic">Nicolás Arrastia</a
+        >
+      </p>
+    </div>
+  </div>
+</footer>

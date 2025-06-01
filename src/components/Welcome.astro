@@ -1,0 +1,29 @@
+---
+import Buttons from "./Buttons.astro";
+---
+
+<section
+  id="Inicio"
+  class="flex flex-col-reverse bg-cover bg-center bg-no-repeat min-h-screen text-white"
+  style="background-image: url('/bg-veritas.webp');"
+>
+  <div
+    class="bg-opacity-60 py-10 flex flex-col px-5 xl:px-0 container mx-auto items-start"
+  >
+    <h1 class="sm:leading-10 text-3xl sm:text-4xl md:text-5xl mb-10 font-DM">
+      Asesoría Legal Integral <br /> para <em>Empresas</em> y <em
+        >Particulares</em
+      >
+    </h1>
+    <p
+      class="sm:text-lg mb-10 italic font-roboto font-extralight text-slate-200"
+    >
+      Más de 10 años defendiendo tus derechos con profesionalismo y
+      compromiso...
+    </p>
+    <div class="flex gap-4">
+      <Buttons href="#Contacto">Agendá tu Consulta</Buttons>
+      <Buttons href="#Nosotros">Conocenos </Buttons>
+    </div>
+  </div>
+</section>
